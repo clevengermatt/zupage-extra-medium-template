@@ -1,32 +1,155 @@
-.App {
-  text-align: center;
+.Template {
+  padding-bottom: 100px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Avatar {
+  height: 60px;
+  width: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Body-Text {
+  font-size: 24px;
+  font-family: "Amiri", serif;
 }
 
-.App-link {
-  color: #61dafb;
+.Body-Text p:first-child::first-letter {
+  padding: 0 0.3rem;
+  margin: 0.7rem 0.3rem 0 0;
+  font-size: 4rem;
+  float: left;
+  line-height: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Creator {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Creator-Name {
+  margin-left: 80px;
+  margin-top: -50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.Date {
+  margin-left: 80px;
+  font-family: "Roboto", sans-serif;
+  color: grey;
+}
+
+.Slider {
+  width: 50%;
+  margin-right: 0px;
+  margin-left: auto;
+  height: auto;
+}
+
+.Slider-Item {
+  height: auto;
+}
+
+.Text-Container {
+  position: relative;
+  margin-top: -50px;
+  background-color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.Title {
+  font-family: "Crimson Text", serif;
+  font-size: 3.5vw;
+  line-height: 3.5vw;
+}
+
+.Info-Large {
+  width: 30%;
+  margin: 0;
+  margin-left: 7%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.Info-Small {
+  visibility: hidden;
+  height: 0px;
+}
+
+.Top {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 60px;
+}
+
+@media (max-width: 1024px) {
+  .Body-Text {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Info-Large {
+    visibility: hidden;
+  }
+
+  .Info-Small {
+    visibility: visible;
+    height: auto;
+  }
+
+  .Slider {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: auto;
+    height: 400px;
+  }
+
+  .Slider-Item {
+    height: auto;
+    height: 400px;
+  }
+
+  .Top {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .Title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 623px) {
+  .Body-Text {
+    font-size: 20px;
+  }
+
+  .Info-Large {
+    visibility: hidden;
+  }
+
+  .Info-Small {
+    visibility: visible;
+    height: auto;
+  }
+
+  .Slider {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: auto;
+    height: 300px;
+  }
+
+  .Slider-Item {
+    height: auto;
+    height: 300px;
+  }
+
+  .Title {
+    font-size: 35px;
+    line-height: 35px;
   }
 }
