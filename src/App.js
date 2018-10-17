@@ -80,7 +80,7 @@ class App extends Component {
     return images.map((image, i) => {
       return (
         <div key={i} className="Slider-Item">
-          <Image src={image.url} />
+          <Image src={image.url} fluid />
         </div>
       );
     });
